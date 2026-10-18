@@ -34,7 +34,6 @@ Ask in natural language (e.g. "What is the ROR of methotrexate?"). Gemini decide
 - The chat uses a free Gemini tier with a daily quota.
 - Disproportionality analysis cannot establish causality.
 
-## Setup
 
 ## Setup
 
