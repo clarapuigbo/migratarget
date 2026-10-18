@@ -41,16 +41,13 @@ Ask in natural language (e.g. "What is the ROR of methotrexate?"). Gemini decide
 2. Install Python 3 and the dependencies:
    `pip install -r requirements.txt`
 3. Create your secrets file: copy `.streamlit/secrets.toml.example` to `.streamlit/secrets.toml` and fill in your own values:
-   - `CLAUDE_API_KEY`: Anthropic key (https://console.anthropic.com). **This is a paid API: you need credit on your account.** Each review costs a few cents.
+   - `FAERS_API_KEY`: free openFDA key (https://open.fda.gov/apis/authentication/)
+   - `GOOGLE_API_KEY`: free Google AI Studio key (https://aistudio.google.com/apikey)
    - `NCBI_API_KEY` and `NCBI_EMAIL`: free NCBI key for PubMed (account settings > API Key Management) and the email of that account
 4. Run the app:
    `streamlit run app.py`
 
-The app opens in your browser at `http://localhost:8501`.
-
-**First run:** nothing is shown until you pick a date and press **Revisar**, which fetches and reviews that day's papers. The interface is in Spanish.
-
-If the review fails with a model or tool error, check the model name (`claude-haiku-4-5-20251001`) in `app.py`. The `web_fetch` tool is a beta feature, so Anthropic may change how it works.
+The app opens in your browser at `http://localhost:8501`. A full FAERS update can take several minutes.
 
 ## Built with
 
