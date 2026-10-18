@@ -1,0 +1,14 @@
+# Secrets and personal data - never upload
+.streamlit/secrets.toml
+resultados/
+*.xlsx
+*.jsonl
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
