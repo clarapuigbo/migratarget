@@ -36,12 +36,19 @@ Ask in natural language (e.g. "What is the ROR of methotrexate?"). Gemini decide
 
 ## Setup
 
-1. Install Python 3 and the dependencies: `pip install -r requirements.txt`
-2. Copy `.streamlit/secrets.toml.example` to `.streamlit/secrets.toml` and add your own keys:
-   - openFDA: https://open.fda.gov/apis/authentication/
-   - NCBI (PubMed): account settings > API Key Management
-   - Google AI Studio: https://aistudio.google.com/apikey
-3. Run: `streamlit run app.py`
+## Setup
+
+1. Download the code (**Code → Download ZIP**, or `git clone`) and open a terminal inside the project folder.
+2. Install Python 3 and the dependencies:
+   `pip install -r requirements.txt`
+3. Create your secrets file: copy `.streamlit/secrets.toml.example` to `.streamlit/secrets.toml` and fill in your own values:
+   - `FAERS_API_KEY`: free openFDA key (https://open.fda.gov/apis/authentication/)
+   - `GOOGLE_API_KEY`: free Google AI Studio key (https://aistudio.google.com/apikey)
+   - `NCBI_API_KEY` and `NCBI_EMAIL`: free NCBI key for PubMed (account settings > API Key Management) and the email of that account
+4. Run the app:
+   `streamlit run app.py`
+
+The app opens in your browser at `http://localhost:8501`. A full FAERS update can take several minutes.
 
 ## Built with
 
